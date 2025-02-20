@@ -1,5 +1,5 @@
 FROM debian:sid-slim
-LABEL maintainer="Xiaonan Shen <s@sxn.dev>"
+LABEL maintainer="Joey Patino <joey.patino@pm.me>"
 
 EXPOSE 25/tcp
 EXPOSE 143/tcp

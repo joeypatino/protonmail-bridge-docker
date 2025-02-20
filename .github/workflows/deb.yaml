@@ -12,14 +12,16 @@ on:
     paths:
       - .github/workflows/deb.yaml
       - deb/*
-
+  workflow_dispatch:
+    
 env:
-  DOCKER_REPO: shenxn/protonmail-bridge
-  DOCKER_REPO_DEV: ghcr.io/shenxn/protonmail-bridge-dev
+  DOCKER_REPO: regularize/protonmail-bridge
+  DOCKER_REPO_DEV: ghcr.io/joeypatino/protonmail-bridge
 
 jobs:
   deb:
     runs-on: ubuntu-latest
+    environment: Main
     steps:
       - name: Checkout
         uses: actions/checkout@master

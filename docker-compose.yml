@@ -2,10 +2,12 @@ version: '2.1'
 
 services:
   protonmail-bridge:
-    image: shenxn/protonmail-bridge
+    image: regularize/protonmail-bridge
     ports:
       - 1025:25/tcp
       - 1143:143/tcp
+      - 1587:587/tcp
+      - 1993:993/tcp
     restart: unless-stopped
     volumes:
       - protonmail:/root

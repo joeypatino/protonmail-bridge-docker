@@ -10,7 +10,7 @@ COPY build.sh VERSION /build/
 RUN bash build.sh
 
 FROM debian:sid-slim
-LABEL maintainer="Simon Felding <sife@adm.ku.dk>"
+LABEL maintainer="Joey Patino <joey.patino@pm.me>"
 
 EXPOSE 25/tcp
 EXPOSE 143/tcp
