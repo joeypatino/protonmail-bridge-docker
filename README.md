@@ -87,6 +87,7 @@ The initialization step exposes the bridge CLI so you can do things like switch 
 
 For anyone who want to build this container on your own (for development or security concerns), here is the guide to do so. First, you need to `cd` into the directory (`deb` or `build`, depending on which type of image you want). Then just run the docker build command
 ```
+
 docker build .
 ```
 
